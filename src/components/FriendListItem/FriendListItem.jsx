@@ -3,10 +3,7 @@ import styles from './FriendListItem.module.css';
 const FriendListItem = ({ avatar, name, isOnline }) => {
   return (
     <li className={styles.item}>
-      <span className={styles.status}>
-        {isOnline}
-        {/* {isOnline ? span.status = color grin : span.status=color raid} подумать, как правильно записать */}
-      </span>
+      <span className={isOnline ? styles.online : styles.offline}></span>
       <img
         className={styles.avatar}
         src={avatar}

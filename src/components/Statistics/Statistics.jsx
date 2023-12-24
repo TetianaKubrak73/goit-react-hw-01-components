@@ -5,14 +5,14 @@ const generateRandomColor = () => {
   const blue = Math.floor(Math.random() * 256);
   return `rgb(${red},${green},${blue})`;
 };
-const Statistics = ({ data, title, id }) => {
+const Statistics = ({ stats, title, id }) => {
   return (
     <section className={style.statistics}>
-      {title && <h2>{title}</h2>}
-      <h2 className={style.title}>{title}</h2>
+      {title && <h2 className={style.title}>{title}</h2>}
+      {/* <h2 className={style.title}>{title}</h2> */}
 
       <ul className={style.statList}>
-        {data.map(({ id, label, percentage }) => (
+        {stats.map(({ id, label, percentage }) => (
           <li
             className={style.item}
             key={id}

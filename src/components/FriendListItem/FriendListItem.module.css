@@ -1,11 +1,11 @@
-.friendItem {
-  color: blueviolet;
-}
 .item {
+  color: blueviolet;
 }
 .status {
 }
 .avatar {
 }
 .name {
+  background-color: black;
+  font-size: 14px;
 }

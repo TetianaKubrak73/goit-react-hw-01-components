@@ -1,4 +1,5 @@
 .avatar {
+  height: 100%;
 }
 .profile {
   height: 80px;
@@ -6,4 +7,16 @@
 }
 .description {
   background-color: bisque;
+}
+.stats {
+  display: flex;
+  background-color: beige;
+}
+.label {
+  font-size: 10px;
+  color: gray;
+}
+.quantity {
+  font-size: 14px;
+  color: black;
 }

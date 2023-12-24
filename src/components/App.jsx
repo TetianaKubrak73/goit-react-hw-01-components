@@ -1,10 +1,8 @@
-import {
-  FriendList,
-  FriendListItem,
-  TransactionHistory,
-  Statistics,
-  Profile,
-} from '../components';
+import FriendList from './FriendList/FriendList';
+import FriendListItem from './FriendListItem/FriendListItem';
+import TransactionHistory from './TransactionHistory/TransactionHistory';
+import Statistics from './Statistics/Statistics';
+import Profile from './Profile/Profile';
 
 import data from '../data/data.json';
 import friends from '../data/friends.json';

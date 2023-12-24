@@ -1,8 +1,8 @@
-// import { type } from '@testing-library/user-event/dist/type';
+import styles from './TransactionHistory.module.css';
 
-export const TransactionHistory = ({ transactions }) => {
+const TransactionHistory = ({ transactions }) => {
   return (
-    <table className="transaction-history">
+    <table className={styles.transactionHistory}>
       <thead>
         <tr>
           <th>Type</th>
@@ -22,3 +22,5 @@ export const TransactionHistory = ({ transactions }) => {
     </table>
   );
 };
+
+export default TransactionHistory;

@@ -1,2 +1,9 @@
 .avatar {
 }
+.profile {
+  height: 80px;
+  width: 40px;
+}
+.description {
+  background-color: bisque;
+}

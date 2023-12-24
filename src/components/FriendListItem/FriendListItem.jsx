@@ -1,11 +1,21 @@
-import { FriendList } from '../FriendList/FriendList';
 import styles from './FriendListItem.module.css';
-export const FriendListItem = ({ avatar, name, isOnline }) => {
+
+const FriendListItem = ({ avatar, name, isOnline }) => {
   return (
-    <FriendList className={styles.frienditem}>
-      <avatar src={avatar} alt={name} />
-      <name>{name}</name>
-      {/* <isOnline>{isOnline ? <FcBullish /> : <FcBearish />}</isOnline> */}
-    </FriendList>
+    <li className={styles.item}>
+      <span className={styles.status}>
+        {isOnline}
+        {/* {isOnline ? span.status = color grin : span.status=color raid} подумать, как правильно записать */}
+      </span>
+      <img
+        className={styles.avatar}
+        src={avatar}
+        alt="User avatar"
+        width="48"
+      />
+      <p className={styles.name}>{name}</p>
+    </li>
   );
 };
+
+export default FriendListItem;
